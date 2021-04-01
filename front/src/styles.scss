@@ -1,0 +1,207 @@
+
+$theme-colors: (
+    "primary": #e77728,
+    "secondary": #ffdca1,
+    "dark": #000
+  );
+@import "node_modules/bootstrap/scss/bootstrap";
+
+
+@font-face {
+  font-family: "Okta";
+  src: url("/assets/police/okta/Okta.otf");
+}
+@font-face {
+  font-family: "OktaLight";
+  src: url("/assets/police/okta/OktaLight.otf");
+}
+@font-face {
+  font-family: "Animosa";
+  src: url("/assets/police/animosa/Animosa-Bold.otf");
+  font-weight: normal;
+}
+@font-face {
+    font-family: "Din Next";
+    src: url("/assets/police/din-next/DIN Next W01 Regular.otf");
+    font-weight: normal;
+  }
+
+
+
+.collapse {
+  margin-right: 5%;
+}
+
+.navbar-brand {
+  margin-left: 5%;
+}
+h1 {
+  color: Orange;
+  text-align: center;
+  padding-top: 5%;
+  font-family: Okta;
+  font-size: 75px;
+}
+
+p {
+  font-size: 22px;
+  font-family: Din Next;
+}
+
+input {
+    color: #000 !important;
+}
+
+.prestexte {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  font-family: OktaLight;
+  line-height: 1.75;
+}
+
+
+h2 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Okta;
+  font-size: 45px;
+}
+
+.tuto {
+  display: inline-flex;
+
+  text-align: center;
+}
+
+.step {
+  margin: 3%;
+}
+
+.step p {
+  margin-top: 8%;
+  font-family: OktaLight;
+  color: white;
+}
+
+h3 {
+  margin-top: 8%;
+  color: white;
+  font-family: Okta;
+}
+
+h4 {
+  color: orange;
+  font-family: Okta;
+  font-size: 70px;
+  text-align: left;
+}
+
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 0;
+  overflow: hidden;
+  background-color: orange;
+  border-color: orange;
+  margin-top: 15%;
+}
+
+.btn:hover {
+  background-color: darkgoldenrod;
+  border-color: darkgoldenrod;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.login-form img {
+  margin: auto;
+}
+
+input {
+  margin-top: 5%;
+  background: transparent;
+  border-style: none;
+  border-bottom-style: solid;
+  color: white;
+}
+
+.form h1 {
+  margin-bottom: 5%;
+  padding-top: 8%;
+}
+
+a {
+  color: rgb(0, 0, 0);
+}
+
+a:hover {
+  color: #e77728;
+  text-decoration: none;
+}
+
+.form p {
+  padding-top: 2%;
+  text-align: center;
+}
+
+@media screen and (max-width: 858px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+
+  h4 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+  .tuto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .form h1 {
+    margin-bottom: 15%;
+    padding-top: 18%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
+
+.back a {
+  color: white;
+}
+
+.back {
+  padding-bottom: 20%;
+}

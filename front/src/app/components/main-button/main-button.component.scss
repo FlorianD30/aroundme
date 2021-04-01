@@ -1,0 +1,125 @@
+.background {
+  background-image: url("/assets/img/people.jpg");
+  height: 1080px;
+  width: 100%;
+  padding-top: 10rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.badge {
+  display: block;
+  position: relative;
+  width: 40rem;
+  height: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  box-shadow: 0px 0.5rem 1rem rgba(255, 209, 81, 0.05);
+  display: table;
+
+  .main-text {
+    font-family: "Animosa";
+    font-weight: bold;
+    font-size: 10rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    max-width: 20px;
+    vertical-align: middle;
+    display: table-cell;
+    transition: all 0.8s;
+
+    span {
+      font-family: "Animosa";
+      font-weight: lighter;
+      font-size: 80px;
+      color: #fff;
+      transition: all 0.8s;
+    }
+
+    &:hover {
+        font-size: 7rem;
+
+        span {
+            font-size: 7rem;
+        }
+    }
+  }
+
+  .text {
+    display: block;
+    position: absolute;
+    font-size: 0.9rem;
+    font-family: OktaLight;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    transform: rotate(-180deg) translate(-10rem) rotate(180deg);
+    box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  .text1 {
+    width: 10rem;
+    height: 10rem;
+    line-height: 10rem;
+    left: 50%;
+    top: 60%;
+    margin-top: 10rem;
+    margin-left: -5rem;
+    border-radius: 65% 80%;
+    background: rgba(231, 119, 40, 1);
+  }
+
+  .text2 {
+    width: 8rem;
+    height: 8rem;
+    line-height: 8rem;
+    left: -60%;
+    top: 10%;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    border-radius: 60% 40%;
+    background: rgba(253, 252, 251, 0.103);
+  }
+
+  .text3 {
+    width: 15rem;
+    height: 15rem;
+    line-height: 15rem;
+    left: 80%;
+    margin-top: 2rem;
+    margin-left: 0rem;
+    border-radius: 50% 90%;
+    background: #ffd15169;
+  }
+
+  &:hover {
+    box-shadow: 0px 0.5rem 2rem rgba(255, 209, 81, 0.2);
+    background-position: 0% 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+    .text1, .text2, .text3 {
+      background: rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0);
+
+      box-shadow: 0px 0px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .text {
+      display: none !important;
+    }
+    .badge {
+      width: 30rem;
+    }
+  }
+}
+
+
+

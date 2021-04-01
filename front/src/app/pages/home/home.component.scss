@@ -1,0 +1,22 @@
+.exemple {
+  position: relative;
+  background-image: url("/assets/img/activite.jpg");
+  height: 440px;
+  h4 {
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+  }
+}
+
+span {
+  font-weight: bold;
+}
+
+.etapes {
+  background-color: orange;
+
+  h2 {
+    padding-top: 2rem;
+  }
+}
