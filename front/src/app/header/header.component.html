@@ -10,12 +10,16 @@
               <img class="user" src="assets/img/user.png" alt="Icone_utilisateurs">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="login">Se connecter</a>
-              <a class="dropdown-item" href="register">S'inscrire</a>
-              <a class="dropdown-item" href="#">Se deconnecter</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="/profil">Voir mon profil</a>
-              <a class="dropdown-item" href="/modifprofil">Modifier mon profil</a>
+                <ng-container *ngIf="!isLoggedIn">
+                    <a class="dropdown-item" href="login">Se connecter</a>
+                    <a class="dropdown-item" href="register">S'inscrire</a>
+                </ng-container>
+                <ng-container *ngIf="isLoggedIn">
+                    <!-- <div class="dropdown-divider"></div> -->
+                    <a class="dropdown-item" href="/profile">Voir mon profil</a>
+                    <a class="dropdown-item" href="/modifprofil">Modifier mon profil</a>
+                    <a class="dropdown-item" (click)="signOut()" href="/">Se deconnecter</a>
+                </ng-container>
             </div>
           </li>
         </ul>

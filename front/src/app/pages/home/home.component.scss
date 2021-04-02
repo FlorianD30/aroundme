@@ -1,22 +1,60 @@
 .exemple {
-  position: relative;
-  background-image: url("/assets/img/activite.jpg");
-  height: 440px;
-  h4 {
-    position: absolute;
-    bottom: 0;
-    right: 4rem;
+    position: relative;
+    background-image: url("/assets/img/activite.jpg");
+    height: 440px;
+    h4 {
+      position: absolute;
+      bottom: 0;
+      right: 4rem;
+    }
   }
-}
-
-span {
-  font-weight: bold;
-}
-
-.etapes {
-  background-color: orange;
-
-  h2 {
-    padding-top: 2rem;
+  
+  span {
+    font-weight: bold;
   }
-}
+  
+  .etapes {
+    background-color: orange;
+  
+    h2 {
+      color: white;
+      text-align: center;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      font-family: Okta;
+      font-size: 65px;
+    }
+  
+    .tuto {
+      display: inline-flex;
+  
+      text-align: center;
+    }
+  
+    .step {
+      margin: 3%;
+    }
+  
+    .user {
+      width: 100%;
+    }
+  
+    .step p {
+      margin-top: 8%;
+      font-family: OktaLight;
+      color: white;
+    }
+  
+    @media screen and (max-width: 858px) {
+      .tuto {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+      }
+    }
+  
+    h2 {
+      padding-top: 2rem;
+    }
+  }

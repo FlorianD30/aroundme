@@ -1,8 +1,8 @@
 module.exports = {
     HOST: "localhost",
     USER: "root",
-    PASSWORD: "root",
-    DB: "angulardb",
+    PASSWORD: "",
+    DB: "aroundme",
     dialect: "mysql",
     pool: {
       max: 5,

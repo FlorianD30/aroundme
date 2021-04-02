@@ -18,6 +18,8 @@ import { BoardUserComponent } from './pages/board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
 
+import { AgmCoreModule} from '@agm/core';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +39,11 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+        apiKey:'AIzaSyDMkjAzIe-ErI0Q-DzyvBBg9MkvqAdAo1U',
+        libraries:['places']
+    })
   ],
   providers: [authInterceptorProviders],
   bootstrap: [AppComponent]
