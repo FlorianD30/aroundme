@@ -17,6 +17,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { BoardUserComponent } from './pages/board-user/board-user.component';
 
 import { authInterceptorProviders } from './_helpers/auth.interceptor';
+import { MentionslegalesComponent } from './pages/mentionslegales/mentionslegales.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    MentionslegalesComponent
   ],
   imports: [
     BrowserModule,

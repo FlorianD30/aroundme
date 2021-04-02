@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ActivitesComponent } from './pages/activites/activites.component';
 import { CguComponent } from './pages/cgu/cgu.component';
+import { MentionslegalesComponent } from './pages/mentionslegales/mentionslegales.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -11,6 +12,7 @@ import { BoardUserComponent } from './pages/board-user/board-user.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'cgu', component: CguComponent },
+  { path: 'mentionslegales', component: MentionslegalesComponent },
   { path: 'activites', component: ActivitesComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
